@@ -9,7 +9,20 @@
                     <img src="{{user.avatar_url}}" alt="{{ user.name }}<" class="img-thumbnail">
                 </div>
                 <div class="col-md-8">
-                
+                    <div class="stats">
+                        <span class="label label-default">{{ user.public_repos }} Public repos</span>
+                        <span class="label label-primary">{{ user.public_gists }} Public Gits</span>
+                        <span class="label label-success">{{ user.followers }} Followers</span>
+                        <span class="label label-info">{{ user.following }} Following</span>
+                    </div>
+                    <br>
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>Username: </strong>{{ user.login }}</li>
+                        <li class="list-group-item"><strong>Location: </strong>{{ user.location }}</li>
+                        <li class="list-group-item"><strong>Email: </strong>{{ user.email }}</li>
+                        <li class="list-group-item"><strong>Blog: </strong>{{ user.blog }}</li>
+                        <li class="list-group-item"><strong>Member Since: </strong>{{ user.created_at }}</li>
+                    </ul>
                 </div>
             </div>
         </div>
