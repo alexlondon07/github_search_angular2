@@ -2,10 +2,8 @@
     <div class="col-md-12">
         <form>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Username Github</label>
-                    <input type="email" class="form-control" placeholder="Username">
+                    <input type="text" class="form-control" [(ngModel)]="username" (keyup.enter)="search()" name ="username" placeholder="Username Github">
                 </div>
-                <a href="#" class="btn btn-default">Search</a>
         </form>
     </div>
 </div>

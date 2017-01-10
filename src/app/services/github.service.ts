@@ -28,4 +28,11 @@ export class GithubService{
         return this._http.get('https://api.github.com/users/'+this.username+'/repos')
         .map(res =>res.json());
     } 
+
+    /**
+     * Function for update username to get information 
+     */
+    updateUsername(username){
+        this.username = username;
+    }
 }
