@@ -17,17 +17,14 @@ export class GithubComponent implements OnInit {
   /**
    * Function to get information username github
    */
-   search(){
-
+   search() {
       this._githubService.updateUsername(this.username);
 
-      this._githubService.getUser().subscribe(user =>{
-          //console.log(user);
+      this._githubService.getUser().subscribe(user => {
           this.user = user;
       });
-  
-      this._githubService.getRepos().subscribe(repos =>{
-          //console.log(repos);
+
+      this._githubService.getRepos().subscribe(repos => {
           this.repos = repos;
       });
    }
